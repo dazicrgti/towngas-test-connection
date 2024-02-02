@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 const CheckConnection = () => {
   useEffect(() => {
-    fetch("https://backendtestdeploy.azurewebsites.net/backendconnection")
+    fetch(
+      "https://appsvc-tg-prd-amagpt-backend.azurewebsites.net/backendconnection"
+    )
       .then((response) => response.text())
       .then((data) => console.log(data));
   }, []);
