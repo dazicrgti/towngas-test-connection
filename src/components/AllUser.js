@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 const AllUsers = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("https://appsvc-tg-prd-amagpt-backend.azurewebsites.net/allusers")
+    fetch("https://backendtestdeploy.azurewebsites.net/allusers")
       .then((res) => {
         return res.json();
       })
